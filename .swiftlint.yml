@@ -1,0 +1,36 @@
+disabled_rules:
+ - identifier_name
+ - comment_spacing
+ - trailing_whitespace
+ - statement_position
+ - nesting
+ - type_name
+ - legacy_random
+ 
+opt_in_rules:
+ - empty_count
+ - empty_string
+ 
+excluded:
+ - Pods
+ - Carthage
+
+line_length:
+    warning: 500
+    error: 550
+    ignores_function_declarations: true
+    ignores_comments: true
+
+function_body_length:
+    warning: 300
+    error: 500
+type_body_length:
+    warning: 400
+    error: 500
+file_length:
+    warning: 1000
+    error: 1500
+    ignore_comment_only_lines: true
+cyclomatic_complexity:
+    warning: 20
+    error: 30
