@@ -1,0 +1,72 @@
+/*
+ 
+ Created by TapTapStudio (Alice Vinnik).
+ Copyright ©2021 TapTapStudio. All rights reserved.
+
+ ▀▀█▀▀ ░█▀▀█ ▒█▀▀█ ▀▀█▀▀ ░█▀▀█ ▒█▀▀█
+ ░▒█░░ ▒█▄▄█ ▒█▄▄█ ░▒█░░ ▒█▄▄█ ▒█▄▄█
+ ░▒█░░ ▒█░▒█ ▒█░░░ ░▒█░░ ▒█░▒█ ▒█░░░
+
+ ▒█▀▀▀█ ▀▀█▀▀ ▒█░▒█ ▒█▀▀▄ ▀█▀ ▒█▀▀▀█
+ ░▀▀▀▄▄ ░▒█░░ ▒█░▒█ ▒█░▒█ ▒█░ ▒█░░▒█
+ ▒█▄▄▄█ ░▒█░░ ░▀▄▄▀ ▒█▄▄▀ ▄█▄ ▒█▄▄▄█
+ 
+ If you want reskin write me.
+ Here you can see reskin examples 🌅: https://alicevinnik.wixsite.com/taptapstudio
+ Subscribe to my instagram 📷: https://www.instagram.com/taptap_studio/
+ Write to my mail 💌: taptap.main@gmail.com
+ 
+*/
+ 
+//Scenes
+"menuScene_PlayerBestScore" = "Твій найкращий рахунок: ";
+"menuScene_WorldBestScoreValue" = "Глобальний найкращій рахунок: ";
+"menuScene_WorldBestScoreName" = "Від гравця: ";
+
+"gameScene_PauseTitle" = "ПАУЗА";
+"gameScene_labelLevel" = "Рівень: ";
+
+"settingsScene_Title" = "НАСТРОЙКИ";
+"settingsScene_settingPlaySounds" = "Грати звуки";
+"settingsScene_settingPlayMenuNusic" = "Музика меню";
+"settingsScene_settingPlayGameMusic" = "Музикаа гри";
+"settingsScene_settingNotification" = "Повідомлення";
+
+"endScene_CurrentScore" = "Нинішній рахунок: ";
+"endScene_BestScore" = "Найкращий рахунок: ";
+
+"storeScene_Title" = "Магазин";
+"storeScene_PurchasePanelClose" = "Закрити";
+"storeScene_PurchaseCompletitionSuccessfully" = "Ви маєте новий скін!";
+"storeScene_PurchaseCompletitionFailed" = "Вам потібно більше монет!";
+"storeScene_InAppRestore" = "Відновити покупки";
+"storeScene_InAppRemoveAds" = "Вбрати рекламу: 0.99$";
+"storeScene_SkinSelectorBuyFist" = "Купити ";
+"storeScene_SkinSelectorBuyLast" = " монет";
+"storeScene_SkinSelectorSelect" = "Обрати";
+"storeScene_SkinSelectorCurrent" = "Обраний";
+
+"tutorialScene_CloseMessage" = "НАТИСНІТЬ ЩОБ ЗАКРИТИ";
+"tutorialScene_Content1" = "Натисніть щоб вистрілити";
+"tutorialScene_Content2" = "Збирайте 3 або більше";
+"tutorialScene_Content3" = " ";
+
+//Notifications
+"notification_2hours_Type1" = "Грай ще!";
+"notification_2hours_Type2" = "Побийте свій рекорд!";
+"notification_2hours_Type3" = "Збільште свої результати!";
+"notification_2hours_Type4" = "Дякую за гру!";
+
+"notification_6hours_Type1" = "Грай ще!";
+"notification_6hours_Type2" = "Ви можете краще!";
+"notification_6hours_Type3" = "Ще разок?";
+"notification_6hours_Type4" = "Хєй!";
+
+"notification_22hours_Type1" = "Грайте ще раз!";
+"notification_22hours_Type2" = "Привіт!";
+"notification_22hours_Type3" = "Грай знову!";
+
+"notification_1week" = "Це прекрасний день для гри!";
+
+//Sharing
+"share_Text" = "Спробуйте побити мій рахунок!";

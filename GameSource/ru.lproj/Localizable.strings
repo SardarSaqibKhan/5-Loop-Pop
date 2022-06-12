@@ -1,0 +1,72 @@
+/*
+ 
+ Created by TapTapStudio (Alice Vinnik).
+ Copyright ©2021 TapTapStudio. All rights reserved.
+
+ ▀▀█▀▀ ░█▀▀█ ▒█▀▀█ ▀▀█▀▀ ░█▀▀█ ▒█▀▀█
+ ░▒█░░ ▒█▄▄█ ▒█▄▄█ ░▒█░░ ▒█▄▄█ ▒█▄▄█
+ ░▒█░░ ▒█░▒█ ▒█░░░ ░▒█░░ ▒█░▒█ ▒█░░░
+
+ ▒█▀▀▀█ ▀▀█▀▀ ▒█░▒█ ▒█▀▀▄ ▀█▀ ▒█▀▀▀█
+ ░▀▀▀▄▄ ░▒█░░ ▒█░▒█ ▒█░▒█ ▒█░ ▒█░░▒█
+ ▒█▄▄▄█ ░▒█░░ ░▀▄▄▀ ▒█▄▄▀ ▄█▄ ▒█▄▄▄█
+ 
+ If you want reskin write me.
+ Here you can see reskin examples 🌅: https://alicevinnik.wixsite.com/taptapstudio
+ Subscribe to my instagram 📷: https://www.instagram.com/taptap_studio/
+ Write to my mail 💌: taptap.main@gmail.com
+ 
+*/
+ 
+//Scenes
+"menuScene_PlayerBestScore" = "Твой лучший счет: ";
+"menuScene_WorldBestScoreValue" = "Глобальный лучший счет: ";
+"menuScene_WorldBestScoreName" = "От игрока: ";
+
+"gameScene_PauseTitle" = "ПАУЗА";
+"gameScene_labelLevel" = "Уровень: ";
+
+"settingsScene_Title" = "НАСТРОЙКИ";
+"settingsScene_settingPlaySounds" = "Звуки";
+"settingsScene_settingPlayMenuNusic" = "Музыка в меню";
+"settingsScene_settingPlayGameMusic" = "Музыка в игре";
+"settingsScene_settingNotification" = "Уведомления";
+
+"endScene_CurrentScore" = "Текущий счет: ";
+"endScene_BestScore" = "Лучший счет: ";
+
+"storeScene_Title" = "МАГАЗИН";
+"storeScene_PurchasePanelClose" = "Закрыть";
+"storeScene_PurchaseCompletitionSuccessfully" = "У вас новый скин!";
+"storeScene_PurchaseCompletitionFailed" = "Вам нужно больше монет!";
+"storeScene_InAppRestore" = "Восстановить покупки";
+"storeScene_InAppRemoveAds" = "Убрать рекламу: 0.99$";
+"storeScene_SkinSelectorBuyFist" = "Купить ";
+"storeScene_SkinSelectorBuyLast" = " монет";
+"storeScene_SkinSelectorSelect" = "Выбрать";
+"storeScene_SkinSelectorCurrent" = "Текущий";
+
+"tutorialScene_CloseMessage" = "НАЖМИТЕ ЧТОБЫ ЗАКРЫТЬ";
+"tutorialScene_Content1" = "Нажмите чтобы выстрелить";
+"tutorialScene_Content2" = "Соберите 3 или больше";
+"tutorialScene_Content3" = " ";
+
+//Notifications
+"notification_2hours_Type1" = "Сыграй сейчас!";
+"notification_2hours_Type2" = "Побей свой рекорд!";
+"notification_2hours_Type3" = "Улучши свой счет!";
+"notification_2hours_Type4" = "Спасибо за игру!";
+
+"notification_6hours_Type1" = "Сыграй сейчас!";
+"notification_6hours_Type2" = "Ты можешь лучше!";
+"notification_6hours_Type3" = "Сыграй еще!";
+"notification_6hours_Type4" = "Эй!";
+
+"notification_22hours_Type1" = "Сыграй еще разок!";
+"notification_22hours_Type2" = "Привет!";
+"notification_22hours_Type3" = "Cыграй еще!";
+
+"notification_1week" = "Сегодня хороший день для игры!";
+
+//Sharing
+"share_Text" = "Попробуй побить мой счет!";

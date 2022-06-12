@@ -1,0 +1,71 @@
+/*
+ 
+ Created by TapTapStudio (Alice Vinnik).
+ Copyright ©2021 TapTapStudio. All rights reserved.
+
+ ▀▀█▀▀ ░█▀▀█ ▒█▀▀█ ▀▀█▀▀ ░█▀▀█ ▒█▀▀█
+ ░▒█░░ ▒█▄▄█ ▒█▄▄█ ░▒█░░ ▒█▄▄█ ▒█▄▄█
+ ░▒█░░ ▒█░▒█ ▒█░░░ ░▒█░░ ▒█░▒█ ▒█░░░
+
+ ▒█▀▀▀█ ▀▀█▀▀ ▒█░▒█ ▒█▀▀▄ ▀█▀ ▒█▀▀▀█
+ ░▀▀▀▄▄ ░▒█░░ ▒█░▒█ ▒█░▒█ ▒█░ ▒█░░▒█
+ ▒█▄▄▄█ ░▒█░░ ░▀▄▄▀ ▒█▄▄▀ ▄█▄ ▒█▄▄▄█
+ 
+ If you want reskin write me.
+ Here you can see reskin examples 🌅: https://alicevinnik.wixsite.com/taptapstudio
+ Subscribe to my instagram 📷: https://www.instagram.com/taptap_studio/
+ Write to my mail 💌: taptap.main@gmail.com
+ 
+*/
+ 
+//Scenes
+"menuScene_PlayerBestScore" = "Your Best Score: ";
+"menuScene_WorldBestScoreValue" = "World Best Score: ";
+"menuScene_WorldBestScoreName" = "From Player: ";
+
+"gameScene_PauseTitle" = "PAUSE";
+
+"settingsScene_Title" = "SETTINGS";
+"settingsScene_settingPlaySounds" = "Play sounds";
+"settingsScene_settingPlayMenuNusic" = "Play menu music";
+"settingsScene_settingPlayGameMusic" = "Play game music";
+"settingsScene_settingNotification" = "Notifications";
+
+"endScene_CurrentScore" = "Current Score: ";
+"endScene_BestScore" = "Best Score: ";
+
+"storeScene_Title" = "STORE";
+"storeScene_PurchasePanelClose" = "Close";
+"storeScene_PurchaseCompletitionSuccessfully" = "You have new skin!";
+"storeScene_PurchaseCompletitionFailed" = "You need more coins!";
+"storeScene_InAppRestore" = "Restore purchases";
+"storeScene_InAppRemoveAds" = "Remove ads: 0.99$";
+"storeScene_SkinSelectorBuyFist" = "Buy ";
+"storeScene_SkinSelectorBuyLast" = " coins";
+"storeScene_SkinSelectorSelect" = "Select";
+"storeScene_SkinSelectorCurrent" = "Current";
+
+"tutorialScene_CloseMessage" = "TAP TO CLOSE TUTORIAL";
+"tutorialScene_Content1" = "Content 1";
+"tutorialScene_Content2" = "Content 2";
+"tutorialScene_Content3" = "Content 3";
+
+//Notifications
+"notification_2hours_Type1" = "Play now!";
+"notification_2hours_Type2" = "Beat your record!";
+"notification_2hours_Type3" = "Increase your results!";
+"notification_2hours_Type4" = "Thanks for playing!";
+
+"notification_6hours_Type1" = "Play now!";
+"notification_6hours_Type2" = "You can better!";
+"notification_6hours_Type3" = "Play again!";
+"notification_6hours_Type4" = "Hi!";
+
+"notification_22hours_Type1" = "Play one more time!";
+"notification_22hours_Type2" = "Hello!";
+"notification_22hours_Type3" = "Play again!";
+
+"notification_1week" = "It's wonderful day for playing!";
+
+//Sharing
+"share_Text" = "Try to beat my score!";

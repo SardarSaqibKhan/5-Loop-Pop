@@ -1,0 +1,44 @@
+{
+  "images" : [
+    {
+      "filename" : "tutorial-3.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "tutorial-4.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "tutorial-1.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "tutorial.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "subtype" : "2436h"
+    },
+    {
+      "filename" : "tutorial-2.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "subtype" : "1792h"
+    },
+    {
+      "filename" : "tutorial copy.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
