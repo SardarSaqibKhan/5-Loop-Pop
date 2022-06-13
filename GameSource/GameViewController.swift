@@ -21,9 +21,7 @@
 import UIKit
 import SpriteKit
 import GameKit
-import iAd
 import MessageUI
-import StoreKit
 
 class GameViewController: UIViewController {
     // MARK: - Values

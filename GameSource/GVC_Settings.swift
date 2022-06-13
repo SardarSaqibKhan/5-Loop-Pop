@@ -19,7 +19,6 @@
 */
 
 import SpriteKit
-import StoreKit
 
 extension GameViewController {
     // MARK: - Settings
@@ -73,10 +72,6 @@ extension GameViewController {
         /// Load world best score and work with gamecenter
         UserDefaults.standard.set(false, forKey: "GC_worldBestScore_PossibleToShow")
         
-        /// Notification setup
-        sendNotifications()
-        /// InApps setting
-      
         /// Create observer
         createObserversToGameSceneController()
     }
@@ -122,8 +117,5 @@ extension GameViewController {
     // MARK: - Observers
     /** Create GameViewController observers.*/
     func createObserversToGameSceneController() {
-
-        /// Notifications
-        NotificationCenter.default.addObserver(self, selector: #selector(changeNotificationState), name: NSNotification.Name(rawValue: "changeNotificationState"), object: nil)
     }
 }

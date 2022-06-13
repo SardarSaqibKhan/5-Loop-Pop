@@ -26,12 +26,10 @@ class SettingsScene: GlobalScene, SwitchNodeDelegate {
     private let switchSound = SwitchNode(texture: GraphicPreloadsInterface.preload.switch_Body, size: SettingsScenes.Settings.Size.switchSound, zPosition: SettingsScenes.Settings.ZPosition.switchSound, textureDot: GraphicPreloadsInterface.preload.switch_Dot, sizeDot: SettingsScenes.Settings.Size.switchSoundDot, positionDot: SettingsScenes.Settings.Position.switchDotOn, zPositionDot: SettingsScenes.Settings.ZPosition.switchDot)
     private let switchMusicMenu = SwitchNode(texture: GraphicPreloadsInterface.preload.switch_Body, size: SettingsScenes.Settings.Size.switchMusicMenu, zPosition: SettingsScenes.Settings.ZPosition.switchMusicMenu, textureDot: GraphicPreloadsInterface.preload.switch_Dot, sizeDot: SettingsScenes.Settings.Size.switchMusicDot, positionDot: SettingsScenes.Settings.Position.switchDotOn, zPositionDot: SettingsScenes.Settings.ZPosition.switchDot)
     private let switchMusicGame = SwitchNode(texture: GraphicPreloadsInterface.preload.switch_Body, size: SettingsScenes.Settings.Size.switchMusicGame, zPosition: SettingsScenes.Settings.ZPosition.switchMusicGame, textureDot: GraphicPreloadsInterface.preload.switch_Dot, sizeDot: SettingsScenes.Settings.Size.switchMusicDot, positionDot: SettingsScenes.Settings.Position.switchDotOn, zPositionDot: SettingsScenes.Settings.ZPosition.switchDot)
-    private let switchNotification = SwitchNode(texture: GraphicPreloadsInterface.preload.switch_Body, size: SettingsScenes.Settings.Size.switchNotification, zPosition: SettingsScenes.Settings.ZPosition.switchNotification, textureDot: GraphicPreloadsInterface.preload.switch_Dot, sizeDot: SettingsScenes.Settings.Size.switchNotificationDot, positionDot: SettingsScenes.Settings.Position.switchDotOn, zPositionDot: SettingsScenes.Settings.ZPosition.switchDot)
     private let buttonBack = ButtonNode(defaultWithType: .back)
     private let labelSound = SimpleLabel(text: NSLocalizedString("settingsScene_settingPlaySounds", comment: ""), fontSize: SettingsScenes.Settings.FontSize.labelSound, fontColorHex: SettingsScenes.Settings.FontColor.labelSound, position: SettingsScenes.Settings.Position.label_Sound_Music_Notification, zPosition: SettingsScenes.Settings.ZPosition.labelSound)
     private let labelMusicMenu = SimpleLabel(text: NSLocalizedString("settingsScene_settingPlayMenuNusic", comment: ""), fontSize: SettingsScenes.Settings.FontSize.labelMusicMenu, fontColorHex: SettingsScenes.Settings.FontColor.labelMusicMenu, position: SettingsScenes.Settings.Position.label_Sound_Music_Notification, zPosition: SettingsScenes.Settings.ZPosition.labelMusicMenu)
     private let labelMusicGame = SimpleLabel(text: NSLocalizedString("settingsScene_settingPlayGameMusic", comment: ""), fontSize: SettingsScenes.Settings.FontSize.labelMusicGame, fontColorHex: SettingsScenes.Settings.FontColor.labelMusicGame, position: SettingsScenes.Settings.Position.label_Sound_Music_Notification, zPosition: SettingsScenes.Settings.ZPosition.labelMusicGame)
-    private let labelNotification = SimpleLabel(text: NSLocalizedString("settingsScene_settingNotification", comment: ""), fontSize: SettingsScenes.Settings.FontSize.labelNotification, fontColorHex: SettingsScenes.Settings.FontColor.labelNotification, position: SettingsScenes.Settings.Position.label_Sound_Music_Notification, zPosition: SettingsScenes.Settings.ZPosition.labelNotification)
     private let textSettings = LogoSmallNode(withType: .settings)
     // MARK: - Scene life cycle
     override func didMove(to view: SKView) {
@@ -43,28 +41,23 @@ class SettingsScene: GlobalScene, SwitchNodeDelegate {
         labelSound.horizontalAlignmentMode = .right
         labelMusicMenu.horizontalAlignmentMode = .right
         labelMusicGame.horizontalAlignmentMode = .right
-        labelNotification.horizontalAlignmentMode = .right
         labelSound.setShadowDefault()
-        labelNotification.setShadowDefault()
         labelMusicMenu.setShadowDefault()
         labelMusicGame.setShadowDefault()
-        InterfaceExtention.put(nodesWithArray: [switchSound, switchMusicMenu, switchMusicGame, switchNotification], atPosition: SettingsScenes.Settings.Position.switch_Sound_Music_Notification, withSpaceBetween: SettingsScenes.Settings.Position.space_Sound_Music_Notification, andSortHorizontal: false)
-        InterfaceExtention.mirrored(nodesToMirror: [labelSound, labelMusicMenu, labelMusicGame, labelNotification], fromNodes: [switchSound, switchMusicMenu, switchMusicGame, switchNotification], byX: false)
+        InterfaceExtention.put(nodesWithArray: [switchSound, switchMusicMenu, switchMusicGame], atPosition: SettingsScenes.Settings.Position.switch_Sound_Music_Notification, withSpaceBetween: SettingsScenes.Settings.Position.space_Sound_Music_Notification, andSortHorizontal: false)
+        InterfaceExtention.mirrored(nodesToMirror: [labelSound, labelMusicMenu, labelMusicGame], fromNodes: [switchSound, switchMusicMenu, switchMusicGame], byX: false)
         textSettings.setInterfaceSize()
         switchSound.setSwitchState(UserDefaults.standard.bool(forKey: "PlaySounds"))
         switchMusicMenu.setSwitchState(UserDefaults.standard.bool(forKey: "PlayMusicMenu"))
         switchMusicGame.setSwitchState(UserDefaults.standard.bool(forKey: "PlayMusicGame"))
-        switchNotification.setSwitchState(UserDefaults.standard.bool(forKey: "NotificationOn"))
         switchSound.delegate = self
         switchMusicMenu.delegate = self
         switchMusicGame.delegate = self
-        switchNotification.delegate = self
         switchSound.setShadowDefault()
         switchMusicMenu.setShadowDefault()
         switchMusicGame.setShadowDefault()
-        switchNotification.setShadowDefault()
         ///Add nodes to view
-        addChild([background, switchSound, switchMusicMenu, switchMusicGame, switchNotification, buttonBack, labelSound, labelMusicMenu, labelMusicGame, labelNotification, textSettings])
+        addChild([background, switchSound, switchMusicMenu, switchMusicGame, buttonBack, labelSound, labelMusicMenu, labelMusicGame, textSettings])
     }
     // MARK: - Logic
     /**
@@ -78,7 +71,6 @@ class SettingsScene: GlobalScene, SwitchNodeDelegate {
         case switchSound: Sound.preload.changeStateSound()
         case switchMusicMenu: Sound.preload.changeStateMusic(withType: .menu)
         case switchMusicGame: Sound.preload.changeStateMusic(withType: .game)
-        case switchNotification: ExternalFunctions.changeNotificationState()
         default: print("SettingsScenes - changeSwitchStatIsWasDone")
         }
     }
@@ -90,7 +82,6 @@ class SettingsScene: GlobalScene, SwitchNodeDelegate {
             switchSound.changeSwitchState(ifInLocation: location)
             switchMusicMenu.changeSwitchState(ifInLocation: location)
             switchMusicGame.changeSwitchState(ifInLocation: location)
-            switchNotification.changeSwitchState(ifInLocation: location)
             ///Check press to button
             touchDownButtons(atLocation: location)
         }
