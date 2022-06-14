@@ -7,6 +7,7 @@
 - tutorial
 - Game Center
 - Ad-mob
+- Notifications
 
 # Swiftlint 
 Integrated SwiftLint into the Xcode project, edit some of rules and improved code to avoid run time crash.
