@@ -32,8 +32,7 @@ extension GameViewController {
             UserDefaults.standard.set(true, forKey: "PlaySounds")
             UserDefaults.standard.set(true, forKey: "PlayMusicMenu")
             UserDefaults.standard.set(true, forKey: "PlayMusicGame")
-            /// Notifications
-            UserDefaults.standard.set(true, forKey: "NotificationOn")
+
             
             /// Skins
             UserDefaults.standard.set(1, forKey: "CurrentSkin")
