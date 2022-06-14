@@ -72,11 +72,6 @@ struct SettingsGlobal {
     struct Pause {
         static let on = true
     }
-    /** GameCenter settings. Write here you leaderboard id's and other.*/
-    struct GameCenter {
-        static let testMode = true //Turn off test mode when you upload game to AppStore
-        static let leaderboard = "Leaderboard"
-    }
     /** Some social info.*/
     struct SomeSocialStats {
         static let linkToRateUs = "http://google.com/"

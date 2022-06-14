@@ -19,7 +19,6 @@
  */
 
 import UIKit
-import GoogleMobileAds
 import UserNotifications
 
 @UIApplicationMain
@@ -29,8 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     /**Override point for customization after application launch.*/
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        /// Configure google AdMob
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         ///Register notification in game
         if #available(iOS 10.0, *) {
